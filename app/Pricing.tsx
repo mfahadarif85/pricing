@@ -16,15 +16,15 @@ const Pricing = () => {
         </button>
       </div>
       <div className='item-center flex h-80 w-2/3 flex-col justify-center rounded-lg shadow-lg'>
-        <div>
+        <div className='relative left-12'>
           <p>
             Access these features when you get this pricing package for your
             business
           </p>
-          <p>International calling and messaging API</p>
-          <p>Additional phone numbers</p>
-          <p>Automated messages via Zapier</p>
-          <p>24/7 support and consulting</p>
+          <p className='mt-4'>✔️International calling and messaging API</p>
+          <p className='mt-4'>✔️Additional phone numbers</p>
+          <p className='mt-4'>✔️Automated messages via Zapier</p>
+          <p className='mt-4'>✔️24/7 support and consulting</p>
         </div>
       </div>
     </section>
