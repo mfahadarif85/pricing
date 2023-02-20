@@ -33,22 +33,27 @@ const Pricing = () => {
       overflow='hidden'
       boxShadow='xl'
     >
-      <Flex textAlign='center'>
-        <Box bg='#F0EAFB' p='60px'>
+      <Flex direction={["column", "column", "row"]} textAlign='center'>
+        <Box bg='#F0EAFB' p={["28px", "60px", "60px"]}>
           <Text fontSize='xl' fontWeight='extrabold'>
             Premium PRO
           </Text>
-          <Heading as='h3' fontSize='60px' mt='4'>
+          <Heading as='h3' fontSize={["5xl", "5xl", "6xl"]} mt='4'>
             $329
           </Heading>
           <Text color='#171923' fontSize='lg' mt='2' fontWeight='medium'>
             billed just once
           </Text>
-          <Button colorScheme='purple' size='lg' w='282px' mt='6'>
+          <Button
+            colorScheme='purple'
+            size='lg'
+            w={["auto", "282px", "282px"]}
+            mt='6'
+          >
             Get Started
           </Button>
         </Box>
-        <Box p='60px' fontSize='lg' bg='white'>
+        <Box p={["32px", "32px", "60px"]} fontSize='lg' bg='white'>
           <Text textAlign='left'>
             Access these features when you get this pricing package for your
             business.
