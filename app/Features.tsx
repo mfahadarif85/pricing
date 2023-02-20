@@ -15,7 +15,7 @@ function Feature(props: FeatureProps) {
   return (
     <HStack {...rest} spacing='6'>
       <Icon as={icon} boxSize={["8", "8", "12"]} />
-      <Text textAlign='left' fontSize='lg' fontWeight='bold'>
+      <Text textAlign={"left"} fontSize='lg' fontWeight='bold'>
         {children}
       </Text>
     </HStack>
