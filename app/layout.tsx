@@ -1,4 +1,8 @@
-import "./globals.css";
+// app/layout.tsx
+"use client";
+
+import { CacheProvider } from "@chakra-ui/next-js";
+import { ChakraProvider } from "@chakra-ui/react";
 
 export default function RootLayout({
   children,
@@ -8,7 +12,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head />
-      <body className='box-border font-inter'>{children}</body>
+      <body>
+        <CacheProvider>
+          <ChakraProvider>{children}</ChakraProvider>
+        </CacheProvider>
+      </body>
     </html>
   );
 }
